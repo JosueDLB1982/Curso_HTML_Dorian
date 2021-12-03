@@ -1,0 +1,102 @@
+<!-- Formularios en HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Prueba HTML5</title>
+
+<!-- 
+    La estructura básica de un formulario se compone de 4 elementos:
+
+    form -> es la etiqueta que engloba nuestro formulario
+    label -> sirve para escribir el nombre del campo a rellenar. Debe tener el atributo for al cual se le indica un id que lo que hará será emparejar el label con su input correspondiente
+    input -> sirve para crear un campo que le permita al usuario interactuar. El único atributo obligatorio del input es name
+    button -> crea un botón que permitirá enviar el formulario
+ -->
+
+ <!-- 
+     input type:
+        button -> se comporta igual que un botón
+        color -> se utiliza para especificar un color
+        data -> se utiliza para introducir una fecha
+        datetime -> obsoleto
+        datetime-local -> fecha y hora. No funciona en Firefox
+        email -> se utiliza para introducir un email
+        hideen -> campo oculto, puede contener valor pero no se mostrará
+        month -> se utiliza para introducir un mes
+        number -> se utiliza para valores numéricos
+        password -> se utiliza para contraseñas
+        range -> se utiliza para introducir un rango
+        reset -> se utiliza para resetear el formulario
+        search -> se utiliza para las barras de busqueda
+        submit -> se utliza para enviar el formulario
+        tel -> se utiliza para introducir números telefónicos
+        text -> valor por defecto
+        time -> se utiliza para introducir una hora
+        url -> se utiliza para introducir URLs
+        week -> se utiliza para introducir el número de la semana del año
+
+  -->
+
+</head>
+<body>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" autofocus>
+                </td>
+                <td>
+                    <label for="email">email</label>
+                    <input id="email" type="email">
+                </td>
+                <td>
+                    <label for="url">url</label>
+                    <input id="url" type="url" placeholder="url de tu página web">
+                </td>
+                <td>
+                    <label for="fecha">Fecha</label>
+                    <input id="fecha" type="date">
+                </td>
+                <td>
+                    <label for="hora">Hora</label>
+                    <input id="hora" type="time">
+                </td>
+                <td>
+                    <label for="fechaHora">Fecha y Hora</label>
+                    <input id="fechaHora" type="datetime-local">
+                </td>
+            </tr>
+                <td>
+                    <label for="mes">Mes</label>
+                    <input id="mes" type="month">
+                </td>
+                <td>
+                    <label for="semana">Semana</label>
+                    <input id="semana" type="week">
+                </td>
+                <td>
+                    <label for="numero">Número</label>
+                    <input id="numero" type="number">
+                </td>
+                <td>
+                    <label for="telefono">Teléfono</label>
+                    <input id="telefono" type="tel">
+                </td>
+                <td>
+                    <label for="busqueda">Término de Busqueda</label>
+                    <input id="busqueda" type="search">
+                </td>
+                <td>
+                    <label for="color">Color Favorito</label>
+                    <input id="color" type="color">
+                </td>
+        </table>
+        <button>Enviar Formulario</button>
+    </form>
+</body>
+</html>
